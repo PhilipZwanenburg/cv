@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-modified}
+\usepackage{fancyhdr}
+
+%\newlength\marginwidth
+%\setlength\marginwidth{\dimexpr\marginparwidth+\marginparsep}
+%\setlength\marginwidth{\vmargin}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Philip}{Zwanenburg}{
+\href{mailto:philip.zwanenburg@mail.mcgill.ca}{philip.zwanenburg@mail.mcgill.ca} | 514-825-8368 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{McGill University}
+\descript{PhD in Mechanical Engineering}
+\location{Sept. 2014 - Present | Montreal, QC}
+\location{GPA: 4.00 / 4.00}
+\sectionsep
+
+\subsection{McGill University}
+\descript{BS in Mechanical Engineering}
+\location{Sept. 2010 - May 2014 | Montreal, QC}
+\location{GPA: 3.99 / 4.00}
+\sectionsep
+
+\subsection{Dawson College}
+\descript{DEC in Health Science (First Choice)}
+\location{Sept. 2008 - May 2010 | Montreal, QC}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/PhilipZwanenburg}{\bf PhilipZwanenburg} \\
+LinkedIn://  \href{https://www.linkedin.com/}{\bf Philip Zwanenburg} \\
+Google Scholar:// \href{https://scholar.google.ca/}{\bf Philip Zwanenburg} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+\begingroup
+\setlength{\tabcolsep}{.4em}
+\hspace*{-0.2cm}
+\begin{tabular}{ll}
+MATH	& Numerical Differential Equations\\
+	& Numerical Analysis 1\\
+COMP	& Matrix Computations\\
+MECH	& Computational Gasdynamics
+\end{tabular}
+\endgroup
+\sectionsep
+
+\subsection{Undergraduate}
+\begingroup
+\setlength{\tabcolsep}{.4em}
+\hspace*{-0.2cm}
+\begin{tabular}{ll}
+MATH	& Linear Algebra and PDE's\\
+MECH	& Numerical Methods in Mech Eng\\
+	& Thermodynamics 1 \& 2\\
+	& Fluid Mechanics 1 \& 2\\
+%	& Subsonic Aerodynamics\\
+\end{tabular}
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TEACHING ASSISTANTSHIP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teaching Assistantship}
+Linear Algebra and PDE's (2x) \\
+Intermediate Calculus \\
+Applied Electronics and Instrumentation \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+C \textbullet{} \LaTeX\ \textbullet{} MATLAB
+\\~\\ \vspace{-0.3cm}
+\location{Over 1000 lines:}
+Python \textbullet{} Fortran
+\sectionsep
+
+\subsection{Finite Element Analysis}
+%Discontinuous Galerkin \textbullet{} Stabilized Continuous Galerkin \\
+Wrote an \href{https://github.com/PhilipZwanenburg/DPGSolver}{open-source Discontinuous Galerkin Navier-Stokes solver}
+\sectionsep
+
+\subsection{Languages}
+English \textbullet{} French
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience/Research}
+\runsubsection{McGill University}
+\descript{| Student Undergraduate Researcher}
+\location{May 2013/2014 - August 2013/2014 | Montreal, QC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed a flow solver including novel adaptive frequency selection algorithms using the non-linear frequency domain method for a quasi-1D inviscid test case.
+\item Explored multi-resolution in the context of the Flux Reconstruction scheme for finite element analysis.
+\item This work led to two accepted papers:
+\vspace{0.5\topsep}
+\begin{tightemize}
+\item Adaptive Multiresolution Flux Reconstruction Schemes for Conservation Laws using Multiwavelet Bases (AIAA Aviation 2015 Conference);
+\item Equivalence between the Energy Stable Flux Reconstruction and Filtered Discontinuous Galerkin Schemes (Journal of Computational Physics 2016).
+\end{tightemize}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{McGill University}
+\descript{| Student Undergraduate Researcher}
+\location{May 2012 - August 2012 | Montreal, QC}
+\begin{tightemize}
+\item Developed novel magnetic timing valve functionality for paper-based diagnostics platforms allowing them to be more user-friendly and opening up the possibility of performing multi-step immunoassays.
+\vspace{0.5\topsep}
+\begin{tightemize}
+\item Magnetic Timing Valves for Fluid Control in Paper-Based Microfluidics (Lab on a Chip 2013).
+\end{tightemize}
+\vspace{0.5\topsep}
+\item Received 2nd prize from the Trottier Institute for Sustainability in Engineering and Design at the undergraduate poster session.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Universit\'{e} de Montr\'{e}al}
+\descript{| Chemistry Research Assistant}
+\location{May 2011 - August 2011 | Montreal, QC}
+\begin{tightemize}
+\item Investigated nanodot morphology in ultrathin block copolymer monolayer films.
+\item Atomic-force microscopy images generated were used in a presentation:
+\vspace{0.5\topsep}
+\begin{tightemize}
+\item Ultrathin Block Copolymer Films: Reinterpretation of Pressure-Induced Transition and Gold Patterning of Nanostrand Templates (95th Canadian Chemistry Conference and Exhibition 2012).
+\end{tightemize}
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begingroup
+\setlength{\tabcolsep}{.4em}
+\hspace*{-0.2cm}
+\begin{tabular}{lll}
+2017 & National & Alexander Graham Bell Canada Graduate Scholarship \\
+2015 & University & McGill Engineering Doctoral Award \\
+2015 & National & NSERC Postgraduate Scholarship \\
+2015 & University & Vadasz Doctoral Fellowship in Engineering \\
+2014 & National & Canada Graduate Scholarship - Master’s Program \\
+2014 & Provincial & FQRNT Bourses de ma\^{i}trise en recherche \\
+2014 & University & Charles Michael Morssen Gold Medal for Exceptional \\
+ & & Engineering Promise \\
+2014-2012 & University & NSERC Undergraduate Student Research in Engineering \\
+& & Scholarship (3x)
+\end{tabular}
+\endgroup
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Significant Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+\bibliographystyle{plain}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document} % \documentclass[]{article}
