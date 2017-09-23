@@ -169,11 +169,6 @@ C \textbullet{} \LaTeX\ \textbullet{} MATLAB
 Python \textbullet{} Fortran
 \sectionsep
 
-\subsection{Finite Element Analysis}
-%Discontinuous Galerkin \textbullet{} Stabilized Continuous Galerkin \\
-Wrote an \href{https://github.com/PhilipZwanenburg/DPGSolver}{open-source Discontinuous Galerkin Navier-Stokes solver}
-\sectionsep
-
 \subsection{Languages}
 English \textbullet{} French
 
@@ -192,19 +187,31 @@ English \textbullet{} French
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience/Research}
+
+\runsubsection{McGill University}
+\descript{| Graduate Student - PhD Fast-Track}
+\location{Sept. 2014 - Present | Montreal, QC}
+Goal: Investigation of modern numerical methods for computational fluid dynamics:
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Proved the general equivalence of the Energy Stable Flux Reconstruction and filtered Discontinuous
+Galerkin methods (see significant publications).
+\item Investigated several aspects relating to curved high-order geometry treatment (see significant publications).
+\item Wrote an open-source high-order unstructured compressible Navier-Stokes Discontinuous Galerkin solver (available
+on \href{https://github.com/PhilipZwanenburg/DPGSolver}{github}).
+\item Currently investigating the discontinuous Petrov-Galerkin method.
+\item Additional competencies/interests: multiresolution, sum factorization, isogeometric analysis, entropy stability.
+\end{tightemize}
+\sectionsep
+
+
 \runsubsection{McGill University}
 \descript{| Student Undergraduate Researcher}
 \location{May 2013/2014 - August 2013/2014 | Montreal, QC}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed a flow solver including novel adaptive frequency selection algorithms using the non-linear frequency domain method for a quasi-1D inviscid test case.
-\item Explored multi-resolution in the context of the Flux Reconstruction scheme for finite element analysis.
-\item This work led to two accepted papers:
-\vspace{0.5\topsep}
-\begin{tightemize}
-\item Adaptive Multiresolution Flux Reconstruction Schemes for Conservation Laws using Multiwavelet Bases (AIAA Aviation 2015 Conference);
-\item Equivalence between the Energy Stable Flux Reconstruction and Filtered Discontinuous Galerkin Schemes (Journal of Computational Physics 2016).
-\end{tightemize}
+\item Explored multiresolution in the context of the Flux Reconstruction scheme for finite element analysis.
+\item Led to an accepted AIAA Aviation 2015 conference paper (unpublished).
 \end{tightemize}
 \sectionsep
 
@@ -212,13 +219,11 @@ English \textbullet{} French
 \descript{| Student Undergraduate Researcher}
 \location{May 2012 - August 2012 | Montreal, QC}
 \begin{tightemize}
-\item Developed novel magnetic timing valve functionality for paper-based diagnostics platforms allowing them to be more user-friendly and opening up the possibility of performing multi-step immunoassays.
+\item Contributed to the development of novel magnetic timing valve functionality for paper-based diagnostics platforms allowing them to be more user-friendly and opening up the possibility of performing multi-step immunoassays.
 \vspace{0.5\topsep}
 \begin{tightemize}
 \item Magnetic Timing Valves for Fluid Control in Paper-Based Microfluidics (Lab on a Chip 2013).
 \end{tightemize}
-\vspace{0.5\topsep}
-\item Received 2nd prize from the Trottier Institute for Sustainability in Engineering and Design at the undergraduate poster session.
 \end{tightemize}
 \sectionsep
 
@@ -252,10 +257,8 @@ English \textbullet{} French
 2015 & University & Vadasz Doctoral Fellowship in Engineering \\
 2014 & National & Canada Graduate Scholarship - Master’s Program \\
 2014 & Provincial & FQRNT Bourses de ma\^{i}trise en recherche \\
-2014 & University & Charles Michael Morssen Gold Medal for Exceptional \\
- & & Engineering Promise \\
-2014-2012 & University & NSERC Undergraduate Student Research in Engineering \\
-& & Scholarship (3x)
+2014 & University & Charles Michael Morssen Gold Medal \\
+2014-2012 & University & NSERC Undergraduate Student Research Award (3x)
 \end{tabular}
 \endgroup
 \sectionsep
