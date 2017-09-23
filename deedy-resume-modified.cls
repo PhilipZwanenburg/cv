@@ -12,7 +12,8 @@
 \newdimen\myvmargin
 \setlength{\myvmargin}{0.75cm}
 \usepackage[hmargin=1.25cm, vmargin=\myvmargin]{geometry}
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
+\usepackage[]{hyperref}
 
 % Publications
 \usepackage{cite}
@@ -26,10 +27,18 @@
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue,
+}
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+%\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmainfont[Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Date command
@@ -66,9 +75,9 @@ Last Updated on \today
 \titleformat{\section}{\color{headings}
 \scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
-% Subeadings command
+% Subheadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{headings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}

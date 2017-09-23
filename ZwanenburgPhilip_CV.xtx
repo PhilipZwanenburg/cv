@@ -161,16 +161,30 @@ Applied Electronics and Instrumentation \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-C \textbullet{} \LaTeX\ \textbullet{} MATLAB
-\\~\\ \vspace{-0.3cm}
-\location{Over 1000 lines:}
-Python \textbullet{} Fortran
+\subsection{Programming Languages}
+C        \textbullet{}
+C++      \textbullet{}
+Python3  \textbullet{}
+MATLAB   \textbullet{}
+Fortran  \textbullet{}
+\LaTeX\  \textbullet{}
+Markdown
+\sectionsep
+
+\subsection{Software}
+\href{https://vim.sourceforge.io/}{Vim} \textbullet{}
+\href{https://git-scm.com/}{Git} \textbullet{}
+\href{http://www.stack.nl/~dimitri/doxygen/}{Doxygen} \textbullet{}
+\href{https://cmake.org/}{CMake} \textbullet{}
+\href{https://www.paraview.org/}{Paraview} \textbullet{}
+\href{http://gmsh.info/}{Gmsh} \textbullet{}
+\href{https://software.intel.com/en-us/mkl}{Intel MKL} \textbullet{}
+\href{https://www.mcs.anl.gov/petsc/}{PETSc}
 \sectionsep
 
 \subsection{Languages}
-English \textbullet{} French
+English \textbullet{}
+French
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
