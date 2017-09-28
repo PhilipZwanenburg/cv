@@ -23,10 +23,11 @@
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
-\definecolor{date}{HTML}{666666} 
+\definecolor{date}{rgb}{0.08,0.08,0.08}
 \definecolor{primary}{HTML}{2b2b2b} 
-\definecolor{headings}{HTML}{6A6A6A}
-\definecolor{subheadings}{HTML}{333333}
+\definecolor{headings}{HTML}{1A1A1A}
+\definecolor{subheadings}{HTML}{444444}
+\definecolor{print_readable}{rgb}{0.05,0.05,0.05}
 \hypersetup{
     colorlinks=true,
     citecolor=blue,
@@ -51,11 +52,16 @@
 Last Updated on \today
 \end{textblock}}
 
+\newcommand{\available}{\begin{textblock}{60}(2,5)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+Available September 2018
+\end{textblock}}
+
 % Name command
 \newcommand{\namesection}[3]{
 \centering{
 \fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
 \centering{
@@ -77,7 +83,7 @@ Last Updated on \today
 
 % Subheadings command
 \titleformat{\subsection}{
-\color{headings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{print_readable}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
@@ -88,7 +94,14 @@ Last Updated on \today
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}
+%\color{print_readable}
+\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+
+% Text
+\newcommand{\textlocation}[1]{
+\color{print_readable}
+\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{

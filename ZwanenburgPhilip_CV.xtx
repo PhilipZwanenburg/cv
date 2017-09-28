@@ -62,6 +62,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\available
 \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -80,6 +81,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t]{0.33\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Languages}
+C        \textbullet{}
+C++      \textbullet{}
+Python3  \textbullet{}
+MATLAB   \textbullet{}
+\LaTeX\  \textbullet{}
+Markdown \textbullet{}
+Fortran 
+\sectionsep
+
+\subsection{Software}
+\href{https://vim.sourceforge.io/}{Vim} \textbullet{}
+\href{https://git-scm.com/}{Git} \textbullet{}
+\href{http://www.stack.nl/~dimitri/doxygen/}{Doxygen} \textbullet{}
+\href{https://cmake.org/}{CMake} \textbullet{}
+\href{https://www.paraview.org/}{Paraview} \textbullet{}
+\href{http://gmsh.info/}{Gmsh} \textbullet{}
+\href{https://software.intel.com/en-us/mkl}{Intel MKL} \textbullet{}
+\href{https://www.mcs.anl.gov/petsc/}{PETSc}
+\sectionsep
+
+\subsection{Languages}
+English \textbullet{}
+French
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -103,16 +136,8 @@
 \descript{DEC in Health Science (First Choice)}
 \location{Sept. 2008 - May 2010 | Montreal, QC}
 \sectionsep
+\color{print_readable}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Github:// \href{https://github.com/PhilipZwanenburg}{\bf PhilipZwanenburg} \\
-LinkedIn://  \href{https://www.linkedin.com/}{\bf Philip Zwanenburg} \\
-Google Scholar:// \href{https://scholar.google.ca/}{\bf Philip Zwanenburg} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
@@ -141,7 +166,6 @@ MATH	& Linear Algebra and PDE's\\
 MECH	& Numerical Methods in Mech Eng\\
 	& Thermodynamics 1 \& 2\\
 	& Fluid Mechanics 1 \& 2\\
-%	& Subsonic Aerodynamics\\
 \end{tabular}
 \endgroup
 
@@ -155,36 +179,15 @@ Intermediate Calculus \\
 Applied Electronics and Instrumentation \\
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
+%     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Skills}
-\subsection{Programming Languages}
-C        \textbullet{}
-C++      \textbullet{}
-Python3  \textbullet{}
-MATLAB   \textbullet{}
-Fortran  \textbullet{}
-\LaTeX\  \textbullet{}
-Markdown
-\sectionsep
+\section{Links} 
+Github:// \href{https://github.com/PhilipZwanenburg}{\bf PhilipZwanenburg} \\
+LinkedIn://  \href{https://www.linkedin.com/}{\bf Philip Zwanenburg} \\
+Google Scholar:// \href{https://scholar.google.ca/}{\bf Philip Zwanenburg} \\
 
-\subsection{Software}
-\href{https://vim.sourceforge.io/}{Vim} \textbullet{}
-\href{https://git-scm.com/}{Git} \textbullet{}
-\href{http://www.stack.nl/~dimitri/doxygen/}{Doxygen} \textbullet{}
-\href{https://cmake.org/}{CMake} \textbullet{}
-\href{https://www.paraview.org/}{Paraview} \textbullet{}
-\href{http://gmsh.info/}{Gmsh} \textbullet{}
-\href{https://software.intel.com/en-us/mkl}{Intel MKL} \textbullet{}
-\href{https://www.mcs.anl.gov/petsc/}{PETSc}
-\sectionsep
-
-\subsection{Languages}
-English \textbullet{}
-French
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -197,6 +200,19 @@ French
 \begin{minipage}[t]{0.66\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VALUES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Values}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {\bf Sustainability}: test-driven development, usage of external tools/libraries, documentation.
+\item {\bf Practicality}: motivation before implementation.
+\item {\bf Collaboration}: synthesis of varying expertise of team members.
+\item {\bf Excellence}: usage of modern algorithms and programming features.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -204,55 +220,58 @@ French
 
 \runsubsection{McGill University}
 \descript{| Graduate Student - PhD Fast-Track}
-\location{Sept. 2014 - Present | Montreal, QC}
-Goal: Investigation of modern numerical methods for computational fluid dynamics:
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\textlocation{Sept. 2014 - Present | Montreal, QC}
+Goal: Investigation of modern numerical methods for computational fluid dynamics.
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
+\item Wrote an open-source high-order unstructured compressible Navier-Stokes Discontinuous Galerkin solver (available
+on \href{https://github.com/PhilipZwanenburg/DPGSolver}{github}).
+	\vspace{4pt}
+	\begin{tightemize}
+	\item Managed undergraduate student contributors to the project.
+	\end{tightemize}
+	\vspace{2pt}
 \item Proved the general equivalence of the Energy Stable Flux Reconstruction and filtered Discontinuous
 Galerkin methods (see significant publications).
 \item Investigated several aspects relating to curved high-order geometry treatment (see significant publications).
-\item Wrote an open-source high-order unstructured compressible Navier-Stokes Discontinuous Galerkin solver (available
-on \href{https://github.com/PhilipZwanenburg/DPGSolver}{github}).
-\item Currently investigating the discontinuous Petrov-Galerkin method.
-\item Additional competencies/interests: multiresolution, sum factorization, isogeometric analysis, entropy stability.
 \end{tightemize}
 \sectionsep
 
 
 \runsubsection{McGill University}
 \descript{| Student Undergraduate Researcher}
-\location{May 2013/2014 - August 2013/2014 | Montreal, QC}
+\textlocation{May 2013/2014 - August 2013/2014 | Montreal, QC}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Explored multiresolution in the context of the Flux Reconstruction scheme for finite element analysis.
-\item Led to an accepted AIAA Aviation 2015 conference paper (unpublished).
+%\item Led to an accepted AIAA Aviation 2015 conference paper (unpublished).
 \end{tightemize}
 \sectionsep
 
 \runsubsection{McGill University}
 \descript{| Student Undergraduate Researcher}
-\location{May 2012 - August 2012 | Montreal, QC}
+\textlocation{May 2012 - August 2012 | Montreal, QC}
 \begin{tightemize}
 \item Contributed to the development of novel magnetic timing valve functionality for paper-based diagnostics platforms allowing them to be more user-friendly and opening up the possibility of performing multi-step immunoassays.
 \vspace{0.5\topsep}
-\begin{tightemize}
-\item Magnetic Timing Valves for Fluid Control in Paper-Based Microfluidics (Lab on a Chip 2013).
-\end{tightemize}
+%\begin{tightemize}
+%\item Magnetic Timing Valves for Fluid Control in Paper-Based Microfluidics (Lab on a Chip 2013).
+%\end{tightemize}
 \end{tightemize}
 \sectionsep
 
-
 \runsubsection{Universit\'{e} de Montr\'{e}al}
 \descript{| Chemistry Research Assistant}
-\location{May 2011 - August 2011 | Montreal, QC}
-\begin{tightemize}
-\item Investigated nanodot morphology in ultrathin block copolymer monolayer films.
-\item Atomic-force microscopy images generated were used in a presentation:
-\vspace{0.5\topsep}
-\begin{tightemize}
-\item Ultrathin Block Copolymer Films: Reinterpretation of Pressure-Induced Transition and Gold Patterning of Nanostrand Templates (95th Canadian Chemistry Conference and Exhibition 2012).
-\end{tightemize}
-\end{tightemize}
+\textlocation{May 2011 - August 2011 | Montreal, QC}
+%\begin{tightemize}
+%\item Investigated nanodot morphology in ultrathin block copolymer monolayer films.
+%\item Atomic-force microscopy images generated were used in a presentation:
+%\vspace{0.5\topsep}
+%\begin{tightemize}
+%\item Ultrathin Block Copolymer Films: Reinterpretation of Pressure-Induced Transition and Gold Patterning of
+%Nanostrand Templates (95th Canadian Chemistry Conference and Exhibition 2012).
+%\end{tightemize}
+%\end{tightemize}
 \sectionsep
 
 
