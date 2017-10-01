@@ -98,15 +98,21 @@ Markdown \textbullet{}
 Fortran 
 \sectionsep
 
+\subsection{Environments}
+Linux \textbullet{}
+macOS 
+\sectionsep
+
 \subsection{Software}
-\href{https://vim.sourceforge.io/}{Vim} \textbullet{}
-\href{https://git-scm.com/}{Git} \textbullet{}
-\href{http://www.stack.nl/~dimitri/doxygen/}{Doxygen} \textbullet{}
 \href{https://cmake.org/}{CMake} \textbullet{}
-\href{https://www.paraview.org/}{Paraview} \textbullet{}
+\href{http://www.stack.nl/~dimitri/doxygen/}{Doxygen} \textbullet{}
+\href{https://git-scm.com/}{Git} \textbullet{}
+\href{https://vim.sourceforge.io/}{Vim} \textbullet{}
 \href{http://gmsh.info/}{Gmsh} \textbullet{}
+\href{https://www.paraview.org/}{Paraview} \textbullet{}
 \href{https://software.intel.com/en-us/mkl}{Intel MKL} \textbullet{}
-\href{https://www.mcs.anl.gov/petsc/}{PETSc}
+\href{https://www.mcs.anl.gov/petsc/}{PETSc} \textbullet{}
+\href{http://www.solidworks.com/}{SolidWorks}
 \sectionsep
 
 \subsection{Languages}
@@ -157,6 +163,7 @@ MECH	& Computational Gasdynamics
 \endgroup
 \sectionsep
 
+\iffalse
 \subsection{Undergraduate}
 \begingroup
 \setlength{\tabcolsep}{.4em}
@@ -168,6 +175,7 @@ MECH	& Numerical Methods in Mech Eng\\
 	& Fluid Mechanics 1 \& 2\\
 \end{tabular}
 \endgroup
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TEACHING ASSISTANTSHIP
@@ -207,9 +215,9 @@ Google Scholar:// \href{https://scholar.google.ca/}{\bf Philip Zwanenburg} \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item {\bf Sustainability}: test-driven development, usage of external tools/libraries, documentation.
-\item {\bf Practicality}: motivation before implementation.
-\item {\bf Collaboration}: synthesis of varying expertise of team members.
 \item {\bf Excellence}: usage of modern algorithms and programming features.
+\item {\bf Collaboration}: synthesis of varying expertise of team members.
+\item {\bf Practicality}: motivation before implementation.
 \end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,13 +232,20 @@ Google Scholar:// \href{https://scholar.google.ca/}{\bf Philip Zwanenburg} \\
 Goal: Investigation of modern numerical methods for computational fluid dynamics.
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Wrote an open-source high-order unstructured compressible Navier-Stokes Discontinuous Galerkin solver (available
-on \href{https://github.com/PhilipZwanenburg/DPGSolver}{github}).
+\item Wrote an open-source hp-adaptive high-order unstructured compressible Navier-Stokes Discontinuous Galerkin solver (available
+on \href{https://github.com/PhilipZwanenburg/DPGSolver/tree/development}{github}).
 	\vspace{4pt}
 	\begin{tightemize}
 	\item Managed undergraduate student contributors to the project.
 	\end{tightemize}
 	\vspace{2pt}
+\item Presented at several conferences:
+\href{http://scitech.aiaa.org/2015archives/}{AIAA 2015},
+\href{https://www.siam.org/meetings/cse15/}{SIAM 2015},
+\href{http://scitech.aiaa.org/2016archives/}{AIAA 2016},
+\href{http://aviation.aiaa.org/archive2017/}{AIAA 2017},
+\href{http://14.usnccm.org/}{USNCCM 2017}.
+
 \item Proved the general equivalence of the Energy Stable Flux Reconstruction and filtered Discontinuous
 Galerkin methods (see significant publications).
 \item Investigated several aspects relating to curved high-order geometry treatment (see significant publications).
